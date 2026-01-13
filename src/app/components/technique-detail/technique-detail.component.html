@@ -1,7 +1,7 @@
 <div *ngIf="technique; else notFound" class="detail-root">
   <div class="header">
     <div class="image-wrap">
-      <img *ngIf="technique.data?.image; else noImage" [src]="imageUrl + technique.data.image" [alt]="technique.name" class="detail-image" />
+      <img *ngIf="technique.data?.image; else noImage" [src]="technique.data.image" [alt]="technique.name" class="detail-image" />
       <ng-template #noImage><div class="detail-image placeholder"></div></ng-template>
     </div>
     <div class="meta-block">
@@ -11,8 +11,49 @@
   </div>
 
   <section>
-    <h3>Properties</h3>
-    <pre>{{ technique.data | json }}</pre>
+    <h3>Propriétés</h3>
+    <div class="props">
+      <div *ngIf="technique.category === 'Osaekomi'">
+        <div><strong>Position Tori:</strong> {{ technique.data.positionTori || '—' }}</div>
+        <div><strong>Prise:</strong> {{ technique.data.prise || '—' }}</div>
+        <div *ngIf="technique.data.variante"><strong>Variantes:</strong> {{ technique.data.variante.join(', ') }}</div>
+      </div>
+
+      <div *ngIf="technique.category === 'Shime'">
+        <div><strong>Position Uke:</strong> {{ technique.data.positionUke || '—' }}</div>
+        <div><strong>Position Tori:</strong> {{ technique.data.positionTori || '—' }}</div>
+        <div><strong>Type:</strong> {{ technique.data.type || '—' }}</div>
+        <div><strong>Membres utilisés:</strong> {{ technique.data.membresUtilises ? technique.data.membresUtilises.join(', ') : '—' }}</div>
+        <div><strong>Direction pression:</strong> {{ technique.data.directionPression || '—' }}</div>
+      </div>
+
+      <div *ngIf="technique.category === 'Kansetsu'">
+        <div><strong>Position Uke:</strong> {{ technique.data.positionUke || '—' }}</div>
+        <div><strong>Position Tori:</strong> {{ technique.data.positionTori || '—' }}</div>
+        <div><strong>Articulation:</strong> {{ technique.data.articulation || '—' }}</div>
+        <div><strong>Type de levier:</strong> {{ technique.data.typeLevier || '—' }}</div>
+      </div>
+
+      <div *ngIf="technique.category === 'Ashi' || technique.category === 'Te' || technique.category === 'Koshi' || technique.category === 'Sutemi'">
+        <div><strong>Direction A/R:</strong> {{ technique.data.directionAR || '—' }}</div>
+        <div><strong>Direction latérale:</strong> {{ technique.data.directionLaterale || '—' }}</div>
+        <div><strong>Déplacement Uke:</strong> {{ technique.data.deplacementUke || '—' }}</div>
+      </div>
+
+      <div *ngIf="technique.category === 'Ashi'">
+        <div><strong>Action:</strong> {{ technique.data.action || '—' }}</div>
+      </div>
+      <div *ngIf="technique.category === 'Te'">
+        <div><strong>Bras dominant:</strong> {{ technique.data.brasDominant || '—' }}</div>
+        <div><strong>Traction principale:</strong> {{ technique.data.tractionPrincipale || '—' }}</div>
+      </div>
+      <div *ngIf="technique.category === 'Koshi'">
+        <div><strong>Contact hanche:</strong> {{ technique.data.contactHanche || '—' }}</div>
+      </div>
+      <div *ngIf="technique.category === 'Sutemi'">
+        <div><strong>Direction chute Tori:</strong> {{ technique.data.directionChuteTori || '—' }}</div>
+      </div>
+    </div>
   </section>
 
   <section *ngIf="variants.length">

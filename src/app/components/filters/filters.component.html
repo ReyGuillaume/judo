@@ -1,15 +1,132 @@
 <div class="filters-root">
-  <label>Category
-    <select [(ngModel)]="category">
-      <option value="">Tous</option>
-      <option value="Osaekomi">Osaekomi</option>
-      <option value="Shime">Shime</option>
-      <option value="Kansetsu">Kansetsu</option>
-      <option value="Ashi">Ashi</option>
-      <option value="Te">Te</option>
-      <option value="Koshi">Koshi</option>
-      <option value="Sutemi">Sutemi</option>
-    </select>
-  </label>
-  <button (click)="apply()">Apply</button>
+  <div class="row">
+    <label class="field">
+      <span>Type</span>
+      <select [(ngModel)]="mainType" (ngModelChange)="category=''; emitChange()" (change)="$event.stopPropagation()">
+        <option value="">Tous</option>
+        <option value="NeWaza">NeWaza</option>
+        <option value="TachiWaza">TachiWaza</option>
+      </select>
+    </label>
+
+    <label class="field" *ngIf="mainType">
+      <span>Catégorie</span>
+      <select [(ngModel)]="category" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()" (change)="$event.stopPropagation()">
+        <option *ngFor="let c of subcategories" [value]="c">{{ c === '' ? 'Tous' : c }}</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- common tachi/position filters -->
+  <div *ngIf="category === 'Osaekomi'">
+    <label>Position Tori
+      <select [(ngModel)]="filters.positionTori" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()" (change)="$event.stopPropagation()">
+        <option *ngFor="let p of positionsTori" [value]="p">{{ p === '' ? 'Tous' : p }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div *ngIf="category === 'Shime'">
+    <label>Position Uke
+      <select [(ngModel)]="filters.positionUke" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let p of positionsUke" [value]="p">{{ p === '' ? 'Tous' : p }}</option>
+      </select>
+    </label>
+    <label>Position Tori
+      <select [(ngModel)]="filters.positionTori" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let p of positionsTori" [value]="p">{{ p === '' ? 'Tous' : p }}</option>
+      </select>
+    </label>
+    <label>Type
+      <select [(ngModel)]="filters.type" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let t of shimeTypes" [value]="t">{{ t === '' ? 'Tous' : t }}</option>
+      </select>
+    </label>
+    <div class="membres">
+      <span>Membres utilisés:</span>
+      <label *ngFor="let m of membres"><input type="checkbox" (change)="toggleMembre(m)" [checked]="filters.membresUtilises?.includes(m)"/> {{m}}</label>
+    </div>
+    <label>Direction pression
+      <select [(ngModel)]="filters.directionPression" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let d of directionsPression" [value]="d">{{ d === '' ? 'Tous' : d }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div *ngIf="category === 'Kansetsu'">
+    <label>Position Uke
+      <select [(ngModel)]="filters.positionUke" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let p of positionsUke" [value]="p">{{ p === '' ? 'Tous' : p }}</option>
+      </select>
+    </label>
+    <label>Articulation
+      <select [(ngModel)]="filters.articulation" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let a of articulations" [value]="a">{{ a === '' ? 'Tous' : a }}</option>
+      </select>
+    </label>
+    <label>Type de levier
+      <select [(ngModel)]="filters.typeLevier" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let t of typeLevier" [value]="t">{{ t === '' ? 'Tous' : t }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div *ngIf="category === 'Ashi' || category === 'Te' || category === 'Koshi' || category === 'Sutemi'">
+    <label>Direction A/R
+      <select [(ngModel)]="filters.directionAR" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let d of directionsAR" [value]="d">{{ d === '' ? 'Tous' : d }}</option>
+      </select>
+    </label>
+    <label>Direction latérale
+      <select [(ngModel)]="filters.directionLaterale" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let d of directionsLat" [value]="d">{{ d === '' ? 'Tous' : d }}</option>
+      </select>
+    </label>
+    <label>Déplacement Uke
+      <select [(ngModel)]="filters.deplacementUke" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let d of deplacements" [value]="d">{{ d === '' ? 'Tous' : d }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div *ngIf="category === 'Ashi'">
+    <label>Action
+      <select [(ngModel)]="filters.action" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let a of actionsAshi" [value]="a">{{ a === '' ? 'Tous' : a }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div *ngIf="category === 'Te'">
+    <label>Bras dominant
+      <select [(ngModel)]="filters.brasDominant" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let b of bras" [value]="b">{{ b === '' ? 'Tous' : b }}</option>
+      </select>
+    </label>
+    <label>Traction principale
+      <select [(ngModel)]="filters.tractionPrincipale" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let t of traction" [value]="t">{{ t === '' ? 'Tous' : t }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div *ngIf="category === 'Koshi'">
+    <label>Contact hanche
+      <select [(ngModel)]="filters.contactHanche" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let c of contactHanche" [value]="c">{{ c === '' ? 'Tous' : c }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div *ngIf="category === 'Sutemi'">
+    <label>Direction chute Tori
+      <select [(ngModel)]="filters.directionChuteTori" (ngModelChange)="emitChange()" (change)="$event.stopPropagation()">
+        <option *ngFor="let d of dirChute" [value]="d">{{ d === '' ? 'Tous' : d }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="actions">
+    <button (click)="reset()" class="btn-reset">Réinitialiser</button>
+  </div>
 </div>

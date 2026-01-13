@@ -5,4 +5,7 @@
 .detail-image.placeholder{ background:linear-gradient(90deg,#eee,#f5f5f5) }
 .meta-block{ flex:1 }
 .badge{ display:inline-block; background:#eef; padding:0.2rem 0.5rem; border-radius:4px; margin-bottom:0.5rem }
-pre{ background:#fafafa; padding:0.5rem; border-radius:4px }
+.props{ display:flex; flex-direction:column; gap:0.25rem; margin-top:0.5rem }
+.props div{ padding:0.15rem 0 }
+.props strong{ width:160px; display:inline-block }
+.props pre{ background:#fafafa; padding:0.5rem; border-radius:4px }

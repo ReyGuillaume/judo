@@ -2,10 +2,11 @@
   <div class="controls">
     <input [(ngModel)]="filterText" placeholder="Filter by name or category" />
   </div>
+  <app-filters (change)="applyFilters($event)"></app-filters>
   <ul class="techniques">
     <li *ngFor="let t of filtered()">
       <a [routerLink]="['/technique', t.name]" class="item-link">
-        <img *ngIf="t.data?.image; else placeholder" [src]="imageUrl + t.data.image" [alt]="t.name" class="thumb" />
+        <img *ngIf="t.data?.image; else placeholder" [src]="t.data.image" [alt]="t.name" class="thumb" />
         <ng-template #placeholder><div class="thumb placeholder"></div></ng-template>
         <span class="title">{{ t.name }}</span>
       </a>

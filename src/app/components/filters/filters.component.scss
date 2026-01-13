@@ -1,3 +1,12 @@
-.filters-root{ display:flex; gap:0.5rem; align-items:center }
-select{ padding:0.3rem }
-button{ padding:0.4rem 0.6rem }
+.filters-root{ display:flex; flex-direction:column; gap:0.75rem; align-items:flex-start; padding:0.75rem; border:1px solid #eee; border-radius:8px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.04) }
+.row{ display:flex; gap:0.75rem; width:100% }
+.field{ display:flex; flex-direction:column; gap:0.25rem; flex:1 }
+.field span{ font-size:0.85rem; color:#444 }
+.membres{ display:flex; gap:0.5rem; align-items:center }
+.actions{ display:flex; gap:0.5rem }
+select{ padding:0.45rem 0.5rem; border-radius:6px; border:1px solid #ddd; background:#fbfbfb }
+.btn-reset{ background:transparent; border:1px solid #ddd; padding:0.45rem 0.6rem; border-radius:6px }
+
+@media (max-width:720px){
+	.row{ flex-direction:column }
+}

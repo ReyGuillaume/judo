@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { TechniqueService } from '../../services/technique.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import env from '../../../env';
 
 @Component({
   selector: 'app-technique-detail',
@@ -16,8 +15,6 @@ export class TechniqueDetailComponent implements OnInit {
   technique: any | undefined;
   variants: any[] = [];
   related: any[] = [];
-
-  imageUrl = env.imageUrl;
 
   constructor(private route: ActivatedRoute, private svc: TechniqueService) {}
 
