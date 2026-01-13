@@ -1,0 +1,15 @@
+<div class="filters-root">
+  <label>Category
+    <select [(ngModel)]="category">
+      <option value="">Tous</option>
+      <option value="Osaekomi">Osaekomi</option>
+      <option value="Shime">Shime</option>
+      <option value="Kansetsu">Kansetsu</option>
+      <option value="Ashi">Ashi</option>
+      <option value="Te">Te</option>
+      <option value="Koshi">Koshi</option>
+      <option value="Sutemi">Sutemi</option>
+    </select>
+  </label>
+  <button (click)="apply()">Apply</button>
+</div>

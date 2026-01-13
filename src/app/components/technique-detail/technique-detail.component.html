@@ -1,0 +1,35 @@
+<div *ngIf="technique; else notFound" class="detail-root">
+  <div class="header">
+    <div class="image-wrap">
+      <img *ngIf="technique.data?.image; else noImage" [src]="imageUrl + technique.data.image" [alt]="technique.name" class="detail-image" />
+      <ng-template #noImage><div class="detail-image placeholder"></div></ng-template>
+    </div>
+    <div class="meta-block">
+      <h2>{{ technique.name }}</h2>
+      <div class="badge">{{ technique.category }}</div>
+    </div>
+  </div>
+
+  <section>
+    <h3>Properties</h3>
+    <pre>{{ technique.data | json }}</pre>
+  </section>
+
+  <section *ngIf="variants.length">
+    <h3>Variantes</h3>
+    <ul>
+      <li *ngFor="let v of variants"><a [routerLink]="['/technique', v.name]">{{ v.name }}</a></li>
+    </ul>
+  </section>
+
+  <section *ngIf="related.length">
+    <h3>Liens (référents)</h3>
+    <ul>
+      <li *ngFor="let r of related"><a [routerLink]="['/technique', r.name]">{{ r.name }}</a></li>
+    </ul>
+  </section>
+</div>
+
+<ng-template #notFound>
+  <p>Technique non trouvée.</p>
+</ng-template>

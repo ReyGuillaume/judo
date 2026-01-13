@@ -1,6 +1,17 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { App } from './app/app';
+import { provideRouter, Routes } from '@angular/router';
+import { AppComponent } from './app/app.component';
+import { TechniqueListComponent } from './app/components/technique-list/technique-list.component';
+import { TechniqueDetailComponent } from './app/components/technique-detail/technique-detail.component';
+import { QuizComponent } from './app/components/quiz/quiz.component';
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+const routes: Routes = [
+  { path: '', component: TechniqueListComponent },
+  { path: 'technique/:name', component: TechniqueDetailComponent },
+  { path: 'quiz', component: QuizComponent },
+  { path: '**', redirectTo: '' }
+];
+
+bootstrapApplication(AppComponent, {
+  providers: [provideRouter(routes)]
+}).catch(err => console.error(err));

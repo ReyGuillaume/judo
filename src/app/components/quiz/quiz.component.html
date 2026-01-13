@@ -1,0 +1,14 @@
+<div class="quiz-root" *ngIf="question">
+  <h2>Quiz: devinez la technique</h2>
+  <p><strong>Catégorie:</strong> {{ question.category }}</p>
+  <p><strong>Propriétés:</strong></p>
+  <pre>{{ question.data | json }}</pre>
+
+  <div class="options">
+    <button *ngFor="let o of options" (click)="answer(o.name)">{{ o.name }}</button>
+  </div>
+
+  <div class="result" *ngIf="result">{{ result }}</div>
+
+  <button (click)="next()">Question suivante</button>
+</div>
