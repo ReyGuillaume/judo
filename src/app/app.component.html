@@ -2,8 +2,8 @@
   <header>
     <h1>{{ title }}</h1>
     <nav>
-      <a routerLink="/">Techniques</a> |
-      <a routerLink="/quiz">Quiz</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Techniques</a>
+      <a routerLink="/quiz" routerLinkActive="active">Quiz</a>
     </nav>
   </header>
 

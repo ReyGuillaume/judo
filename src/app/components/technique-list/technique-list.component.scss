@@ -4,7 +4,30 @@ input{ padding:0.5rem; width:100%; max-width:360px }
 .techniques{ list-style:none; padding:0; }
 .techniques li{ padding:0.4rem 0; border-bottom:1px solid #eee; display:flex; align-items:center; justify-content:space-between; gap:1rem }
 .item-link{ display:flex; align-items:center; gap:0.75rem; text-decoration:none; color:inherit }
-.thumb{ width:56px; height:40px; object-fit:cover; border-radius:4px; background:#eee; display:block }
+.thumb{ width:56px; height:40px; object-fit:cover; border-radius:4px; background:#eee; display:block; cursor:pointer; transition:transform 0.2s }
+.thumb:hover{ transform:scale(1.05) }
 .thumb.placeholder{ background:linear-gradient(90deg,#eee,#f5f5f5); }
 .title{ font-weight:600; color:var(--accent) }
 .meta{ color:#666; font-size:0.9rem }
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.zoomed-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}

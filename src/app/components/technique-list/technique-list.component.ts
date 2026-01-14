@@ -16,6 +16,7 @@ export class TechniqueListComponent implements OnInit {
   techniques: any[] = [];
   filterText = '';
   advancedFilters: any = {};
+  imageZoom: string | null = null;
 
   constructor(private svc: TechniqueService, private cdr: ChangeDetectorRef) {}
 
@@ -26,6 +27,16 @@ export class TechniqueListComponent implements OnInit {
   applyFilters(f: any) {
     this.advancedFilters = { ...(f || {}) };
     this.cdr.detectChanges();
+  }
+
+  openImageZoom(imageUrl: string, event: Event) {
+    event.preventDefault();
+    event.stopPropagation();
+    this.imageZoom = imageUrl;
+  }
+
+  closeImageZoom() {
+    this.imageZoom = null;
   }
 
   filtered() {

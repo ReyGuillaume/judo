@@ -77,4 +77,13 @@ export class FiltersComponent {
     this.filters = {};
     this.change.emit({});
   }
+
+  hasActiveFilters(): boolean {
+    if (this.mainType || this.category) return true;
+    return Object.keys(this.filters).some(key => {
+      const val = this.filters[key];
+      if (Array.isArray(val)) return val.length > 0;
+      return val !== '' && val !== undefined && val !== null;
+    });
+  }
 }

@@ -1,7 +1,11 @@
 <div *ngIf="technique; else notFound" class="detail-root">
   <div class="header">
     <div class="image-wrap">
-      <img *ngIf="technique.data?.image; else noImage" [src]="technique.data.image" [alt]="technique.name" class="detail-image" />
+      <img *ngIf="technique.data?.image; else noImage" 
+           [src]="technique.data.image" 
+           [alt]="technique.name" 
+           class="detail-image clickable" 
+           (click)="openImageZoom(technique.data.image)" />
       <ng-template #noImage><div class="detail-image placeholder"></div></ng-template>
     </div>
     <div class="meta-block">
@@ -56,6 +60,13 @@
     </div>
   </section>
 
+  <section *ngIf="technique.data?.etapes && technique.data.etapes.length > 0">
+    <h3>Étapes</h3>
+    <ol class="steps">
+      <li *ngFor="let etape of technique.data.etapes">{{ etape }}</li>
+    </ol>
+  </section>
+
   <section *ngIf="variants.length">
     <h3>Variantes</h3>
     <ul>
@@ -69,8 +80,24 @@
       <li *ngFor="let r of related"><a [routerLink]="['/technique', r.name]">{{ r.name }}</a></li>
     </ul>
   </section>
+
+  <section *ngIf="technique.data?.video && getYoutubeEmbedUrl(technique.data.video)" class="video-section">
+    <h3>Vidéo</h3>
+    <div class="video-container">
+      <iframe 
+        [src]="getYoutubeEmbedUrl(technique.data.video) | safe: 'resourceUrl'" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 </div>
 
 <ng-template #notFound>
   <p>Technique non trouvée.</p>
 </ng-template>
+
+<div *ngIf="imageZoom" class="image-overlay" (click)="closeImageZoom()">
+  <img [src]="imageZoom" alt="Image agrandie" class="zoomed-image" />
+</div>

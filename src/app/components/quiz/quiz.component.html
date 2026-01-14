@@ -1,14 +1,78 @@
 <div class="quiz-root" *ngIf="question">
-  <h2>Quiz: devinez la technique</h2>
-  <p><strong>Catégorie:</strong> {{ question.category }}</p>
-  <p><strong>Propriétés:</strong></p>
-  <pre>{{ question.data | json }}</pre>
-
-  <div class="options">
-    <button *ngFor="let o of options" (click)="answer(o.name)">{{ o.name }}</button>
+  <div class="quiz-header">
+    <h2>🥋 Quiz Judo</h2>
+    <div class="score-badge" *ngIf="totalQuestions > 0">
+      <span class="score-text">{{ score }} / {{ totalQuestions }}</span>
+      <span class="percentage">{{ getScorePercentage() }}%</span>
+    </div>
   </div>
 
-  <div class="result" *ngIf="result">{{ result }}</div>
+  <div class="quiz-card">
+    <div class="question-section">
+      <h3>Devinez la technique :</h3>
+      
+      <div class="hints">
+        <div class="hint" *ngFor="let prop of getHintProperties().slice(0, hintsRevealed); let i = index">
+          <span class="hint-label">{{ prop.label }}:</span>
+          <span class="hint-value">{{ prop.value || '—' }}</span>
+        </div>
+      </div>
 
-  <button (click)="next()">Question suivante</button>
+      <button 
+        *ngIf="hintsRevealed < maxHints && hintsRevealed < getHintProperties().length && !answered" 
+        (click)="revealHint()" 
+        class="btn-hint">
+        💡 Révéler un indice ({{ hintsRevealed }}/{{ Math.min(maxHints, getHintProperties().length) }})
+      </button>
+    </div>
+
+    <div class="image-preview" *ngIf="answered && question.data?.image">
+      <img 
+        [src]="question.data.image" 
+        [alt]="question.name" 
+        class="clickable"
+        (click)="openImageZoom(question.data.image)" />
+    </div>
+
+    <div class="options-section" *ngIf="!answered">
+      <div class="options">
+        <button 
+          *ngFor="let o of options" 
+          (click)="answer(o.name)"
+          class="option-btn">
+          {{ o.name }}
+        </button>
+      </div>
+    </div>
+
+    <div class="result-section" *ngIf="answered">
+      <div class="result" [ngClass]="result">
+        <div *ngIf="result === 'correct'" class="result-icon">✓</div>
+        <div *ngIf="result === 'incorrect'" class="result-icon">✗</div>
+        
+        <div class="result-content">
+          <h4 *ngIf="result === 'correct'">Excellente réponse !</h4>
+          <h4 *ngIf="result === 'incorrect'">Pas tout à fait...</h4>
+          
+          <p class="correct-answer">
+            La bonne réponse est : <strong>{{ correctAnswer }}</strong>
+          </p>
+          
+          <a [routerLink]="['/technique', correctAnswer]" class="link-detail">
+            Voir la fiche détaillée →
+          </a>
+        </div>
+      </div>
+
+      <button (click)="next()" class="btn-next">Question suivante</button>
+    </div>
+  </div>
+
+  <div class="quiz-actions" *ngIf="totalQuestions > 0">
+    <button (click)="resetScore()" class="btn-reset-score">Réinitialiser le score</button>
+  </div>
+</div>
+
+<div *ngIf="imageZoom" class="image-overlay" (click)="closeImageZoom()">
+  <img [src]="imageZoom" alt="Image agrandie" class="zoomed-image" />
 </div>

@@ -3,6 +3,8 @@ export type Judo = NeWaza | TachiWaza;
 interface ITechnique {
     image: string;
     prise: 'classique' | 'croisee' | 'doubleRevers' | 'sansGi' | undefined;
+    etapes: Array<string>;
+    video: string;
     variante?: Array<string>;
 }
 

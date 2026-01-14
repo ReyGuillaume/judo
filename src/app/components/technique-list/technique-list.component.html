@@ -6,11 +6,19 @@
   <ul class="techniques">
     <li *ngFor="let t of filtered()">
       <a [routerLink]="['/technique', t.name]" class="item-link">
-        <img *ngIf="t.data?.image; else placeholder" [src]="t.data.image" [alt]="t.name" class="thumb" />
+        <img *ngIf="t.data?.image; else placeholder" 
+             [src]="t.data.image" 
+             [alt]="t.name" 
+             class="thumb" 
+             (click)="openImageZoom(t.data.image, $event)" />
         <ng-template #placeholder><div class="thumb placeholder"></div></ng-template>
         <span class="title">{{ t.name }}</span>
       </a>
       <span class="meta">{{ t.category }}</span>
     </li>
   </ul>
+</div>
+
+<div *ngIf="imageZoom" class="image-overlay" (click)="closeImageZoom()">
+  <img [src]="imageZoom" alt="Image agrandie" class="zoomed-image" />
 </div>

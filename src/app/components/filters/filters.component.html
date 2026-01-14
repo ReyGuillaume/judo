@@ -126,7 +126,7 @@
     </label>
   </div>
 
-  <div class="actions">
+  <div class="actions" *ngIf="hasActiveFilters()">
     <button (click)="reset()" class="btn-reset">Réinitialiser</button>
   </div>
 </div>

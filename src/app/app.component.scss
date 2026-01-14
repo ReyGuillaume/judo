@@ -1,9 +1,106 @@
 :root{
   --accent: #1e90ff;
+  --accent-hover: #1873cc;
 }
-body, html, :host { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; height: 100vh; }
-.app{ max-width:1100px; margin:0 auto; padding:1rem; height: 100%; display:flex; flex-direction:column; }
-header{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
-nav a{ color:var(--accent); text-decoration:none; }
-main{ margin-top:1rem; flex-grow: 1; }
-footer{ margin-top:2rem; color:#666; }
+
+body, html, :host { 
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; 
+  height: 100vh; 
+}
+
+.app{ 
+  max-width:1100px; 
+  margin:0 auto; 
+  padding:1rem; 
+  height: 100%; 
+  display:flex; 
+  flex-direction:column; 
+}
+
+header{ 
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  gap:1rem; 
+  padding:1.5rem 0;
+  border-bottom:2px solid #f0f0f0;
+  margin-bottom:1.5rem;
+}
+
+header h1 {
+  font-size:1.75rem;
+  font-weight:700;
+  color:#222;
+  margin:0;
+  background:linear-gradient(135deg, #1e90ff 0%, #0066cc 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+nav { 
+  display:flex;
+  gap:0.5rem;
+  align-items:center;
+}
+
+nav a{ 
+  color:#555; 
+  text-decoration:none;
+  padding:0.6rem 1.2rem;
+  border-radius:8px;
+  font-weight:600;
+  transition:all 0.2s;
+  position:relative;
+}
+
+nav a:hover {
+  color:var(--accent);
+  background:#f0f8ff;
+}
+
+nav a.active,
+nav a[routerLinkActive="active"] {
+  color:var(--accent);
+  background:#e6f4ff;
+}
+
+nav a:not(:last-child)::after {
+  content:'';
+  position:absolute;
+  right:-0.25rem;
+  top:50%;
+  transform:translateY(-50%);
+  width:1px;
+  height:20px;
+  background:#ddd;
+}
+
+main{ 
+  margin-top:0; 
+  flex-grow: 1; 
+}
+
+footer{ 
+  margin-top:2rem; 
+  padding-top:1.5rem;
+  border-top:1px solid #f0f0f0;
+  color:#888; 
+  text-align:center;
+}
+
+@media (max-width:600px){
+  header {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1rem;
+  }
+  
+  nav {
+    width:100%;
+  }
+  
+  nav a:not(:last-child)::after {
+    display:none;
+  }
+}
