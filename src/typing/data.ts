@@ -165,7 +165,7 @@ export const shimeWaza: {[name: string]: ShimeWaza} = {
 
 export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
   'JujiGatame': {
-    image: 'https://www.judopourtous.com/Images/NeJujiGatame.gif',
+    image: 'https://www.jc-langegardien.fr/wp-content/uploads/2011/06/juji_gatame.gif',
     prise: 'classique',
     positionUke: 'dos',
     positionTori: 'dessus',
@@ -173,7 +173,7 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
     typeLevier: 'hyperextension',
   },
   'UdeGarami': {
-    image: 'https://www.judopourtous.com/Images/NeUdeGarami.gif',
+    image: 'https://www.jc-langegardien.fr/wp-content/uploads/2011/06/ude_garami.gif',
     prise: 'classique',
     positionUke: 'dos',
     positionTori: 'dessus',
@@ -181,7 +181,7 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
     typeLevier: 'torsion',
   },
   'UdeHishigiUdeGatame': {
-    image: 'https://www.judopourtous.com/Images/NeUdeHishigiUdeGatame.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Ude-Hishigi-Ude-Gatame-removebg-preview.png',
     prise: 'classique',
     positionUke: 'dos',
     positionTori: 'dessus',
@@ -189,7 +189,7 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
     typeLevier: 'hyperextension',
   },
   'UdeHishigiJujiGatame': {
-    image: 'https://www.judopourtous.com/Images/NeUdeHishigiJujiGatame.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Ude-Hishigi-Jugi-Gatame-removebg-preview.png',
     prise: 'classique',
     positionUke: 'dos',
     positionTori: 'dessus',
@@ -197,7 +197,7 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
     typeLevier: 'hyperextension',
   },
   'UdeHishigiHizaGatame': {
-    image: 'https://www.judopourtous.com/Images/NeUdeHishigiHizaGatame.gif',
+    image: 'https://www.judosport.net/technik/udehishigihiza1.240x150.gif',
     prise: 'classique',
     positionUke: 'cote',
     positionTori: 'cote',
@@ -205,7 +205,7 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
     typeLevier: 'hyperextension',
   },
   'UdeHishigiWakiGatame': {
-    image: 'https://www.judopourtous.com/Images/NeUdeHishigiWakiGatame.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Ude-Hishigi-Waki-Gatame-removebg-preview-1.png',
     prise: 'classique',
     positionUke: 'ventre',
     positionTori: 'dessus',
@@ -213,7 +213,7 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
     typeLevier: 'hyperextension',
   },
   'UdeHishigiHaraGatame': {
-    image: 'https://www.judopourtous.com/Images/NeUdeHishigiHaraGatame.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/ude-hishigi-hara-gatame-removebg-preview.png',
     prise: 'classique',
     positionUke: 'ventre',
     positionTori: 'dessus',
@@ -221,16 +221,15 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
     typeLevier: 'hyperextension',
   },
   'UdeHishigiAshiGatame': {
-    image: 'https://www.judopourtous.com/Images/NeUdeHishigiAshiGatame.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/ude-shigi-ashi-gatame-removebg-preview.png',
     prise: 'classique',
     positionUke: 'dos',
     positionTori: 'cote',
     articulation: 'coude',
     typeLevier: 'hyperextension',
   },
-  // Variante / forme traditionnelle
   'AshiGarami': {
-    image: 'https://www.judopourtous.com/Images/NeAshiGarami.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUpyQoU23PrWl9IgS-SFNvCjYZXM6Hm0RIaQ&s',
     prise: undefined,
     positionUke: 'cote',
     positionTori: 'cote',
@@ -241,7 +240,7 @@ export const kansetsuWaza: {[name: string]: KansetsuWaza} = {
 
 export const ashiWaza: {[name: string]: AshiWaza} = {
   'DeAshiHarai': {
-    image: 'https://www.judopourtous.com/Images/NeDeAshiHarai.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/De-ashi-barai.jpg',
     prise: 'classique',
     variante: [],
     action: 'balayage',
@@ -250,7 +249,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'lateral',
   },
   'OkuriAshiHarai': {
-    image: 'https://www.judopourtous.com/Images/NeOkuriAshiHarai.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Okuri-ashi-barai.jpg/250px-Okuri-ashi-barai.jpg',
     prise: 'classique',
     variante: [],
     action: 'balayage',
@@ -259,7 +258,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'lateral',
   },
   'SasaeTsuriKomiAshi': {
-    image: 'https://www.judopourtous.com/Images/NeSasaeTsuriKomiAshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Sasae-tsuri-komi-ashi.jpg',
     prise: 'classique',
     variante: [],
     action: 'blocage',
@@ -268,7 +267,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'statique',
   },
   'HizaGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeHizaGuruma.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Hiza-guruma.jpg',
     prise: 'classique',
     variante: [],
     action: 'blocage',
@@ -277,7 +276,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'statique',
   },
   'KoSotoGari': {
-    image: 'https://www.judopourtous.com/Images/NeKoSotoGari.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Ko-soto-gari.jpg',
     prise: 'classique',
     variante: [],
     action: 'fauchage',
@@ -286,7 +285,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'statique',
   },
   'KoSotoGake': {
-    image: 'https://www.judopourtous.com/Images/NeKoSotoGake.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqo_cxqj2q2-7F3OP4BbEbgAVII-OoEZuXRQ&s',
     prise: 'classique',
     variante: [],
     action: 'blocage',
@@ -295,7 +294,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'statique',
   },
   'KoUchiGari': {
-    image: 'https://www.judopourtous.com/Images/NeKoUchiGari.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Ko-uchi-gari.jpg',
     prise: 'classique',
     variante: [],
     action: 'fauchage',
@@ -304,7 +303,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'statique',
   },
   'OUchiGari': {
-    image: 'https://www.judopourtous.com/Images/NeOUchiGari.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/O-uchi-gari.jpg',
     prise: 'classique',
     variante: [],
     action: 'fauchage',
@@ -313,7 +312,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'avance',
   },
   'AshiUchiMata': {
-    image: 'https://www.judopourtous.com/Images/NeAshiUchiMata.gif',
+    image: 'https://www.judopourtous.com/Images/TachiUchiMataAshi.jpg',
     prise: 'classique',
     variante: ['KoUchiMata','OUchiMata','TakaUchiMata'],
     action: 'fauchage',
@@ -322,7 +321,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'avance',
   },
   'OSotoGari': {
-    image: 'https://www.judopourtous.com/Images/NeOSotoGari.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/O-soto-gari.jpg/250px-O-soto-gari.jpg',
     prise: 'classique',
     variante: [],
     action: 'fauchage',
@@ -331,7 +330,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'recule',
   },
   'OSotoGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeOSotoGuruma.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/O-soto-guruma.jpg',
     prise: 'classique',
     variante: [],
     action: 'blocage',
@@ -340,7 +339,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'statique',
   },
   'HaraiTsurikomiAshi': {
-    image: 'https://www.judopourtous.com/Images/NeHaraiTsurikomiAshi.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2022/01/Harai-tsurikomi-ashi-removebg-preview.png',
     prise: 'classique',
     variante: [],
     action: 'balayage',
@@ -349,7 +348,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'avance',
   },
   'AshiGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeAshiGuruma.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Ashi-guruma-removebg-preview.png',
     prise: 'classique',
     variante: [],
     action: 'blocage',
@@ -358,7 +357,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'statique',
   },
   'OGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeOGuruma.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/O-guruma.jpg',
     prise: 'classique',
     variante: [],
     action: 'blocage',
@@ -366,9 +365,8 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     directionLaterale: undefined,
     deplacementUke: 'statique',
   },
-  // Variantes / contres
   'TsubameGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeTsubameGaeshi.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtzpux8yqNsplaqFtDqwCShX2iWDwaMLqcuw&s',
     prise: undefined,
     action: 'balayage',
     directionAR: undefined,
@@ -376,7 +374,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'recule',
   },
   'OSotoGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeOSotoGaeshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/O-soto-otoshi.jpg',
     prise: undefined,
     action: 'fauchage',
     directionAR: undefined,
@@ -384,23 +382,15 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'recule',
   },
   'OUchiGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeOUchiGaeshi.gif',
+    image: 'https://www.judo-ch.jp/english/dictionary/technique/nage/asi/ooutigaesi/image-mfi/img01.gif',
     prise: undefined,
     action: 'fauchage',
     directionAR: undefined,
     directionLaterale: undefined,
     deplacementUke: 'recule',
   },
-  'KoUchiGaeshi1': {
-    image: 'https://www.judopourtous.com/Images/NeKoUchiGaeshi.gif',
-    prise: undefined,
-    action: 'fauchage',
-    directionAR: undefined,
-    directionLaterale: undefined,
-    deplacementUke: 'recule',
-  },
-  'KoUchiGaeshi2': {
-    image: 'https://www.judopourtous.com/Images/NeKoUchiGaeshi.gif',
+  'KoUchiGaeshi': {
+    image: 'https://www.judo-encyclopedia.com/wp-content/uploads/2022/07/16.-Ko-uchi-gaeshi.jpg',
     prise: undefined,
     action: 'fauchage',
     directionAR: undefined,
@@ -408,7 +398,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
     deplacementUke: 'recule',
   },
   'UchiMataGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeUchiMataGaeshi.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Uchimata-removebg-preview.png',
     prise: undefined,
     action: 'balayage',
     directionAR: undefined,
@@ -419,7 +409,7 @@ export const ashiWaza: {[name: string]: AshiWaza} = {
 
 export const teWaza: {[name: string]: TeWaza} = {
   'IpponSeoiNage': {
-    image: 'https://www.judopourtous.com/Images/NeIpponSeoiNage.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Ippon-seoi-nage.jpg',
     prise: 'classique',
     variante: ['KatateSeoiNage'],
     brasDominant: 'droite',
@@ -429,7 +419,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'avance',
   },
   'MoroteSeoiNage': {
-    image: 'https://www.judopourtous.com/Images/NeMoroteSeoiNage.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/8d/Morote-seoi-nage.jpg',
     prise: 'classique',
     variante: [],
     brasDominant: 'droite',
@@ -439,7 +429,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'avance',
   },
   'EriSeoiNage': {
-    image: 'https://www.judopourtous.com/Images/NeEriSeoiNage.gif',
+    image: 'https://atlantiquejudo.com/wp-content/uploads/2020/01/eriseoinage.gif',
     prise: 'croisee',
     variante: ['KataEriSeoi'],
     brasDominant: 'droite',
@@ -449,7 +439,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'avance',
   },
   'TaiOtoshi': {
-    image: 'https://www.judopourtous.com/Images/NeTaiOtoshi.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Tai-otoshi-removebg-preview.png',
     prise: 'classique',
     variante: [],
     brasDominant: 'droite',
@@ -459,7 +449,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'statique',
   },
   'SumiOtoshi': {
-    image: 'https://www.judopourtous.com/Images/NeSumiOtoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Sumi-otoshi.jpg',
     prise: 'classique',
     variante: [],
     brasDominant: 'droite',
@@ -469,7 +459,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'statique',
   },
   'KataGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeKataGuruma.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZKWPzvBvJA0QkploizWEtpH5vtzKGu2v9gQ&s',
     prise: 'classique',
     variante: [],
     brasDominant: 'droite',
@@ -479,7 +469,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'statique',
   },
   'UkiOtoshi': {
-    image: 'https://www.judopourtous.com/Images/NeUkiOtoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Uki-otoshi.jpg/250px-Uki-otoshi.jpg',
     prise: 'classique',
     variante: [],
     brasDominant: 'droite',
@@ -489,7 +479,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'statique',
   },
   'TeGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeTeGuruma.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2022/01/Te-Guruma-removebg-preview.png',
     prise: 'classique',
     variante: ['SukuiNage'],
     brasDominant: 'droite',
@@ -498,9 +488,8 @@ export const teWaza: {[name: string]: TeWaza} = {
     directionLaterale: undefined,
     deplacementUke: 'statique',
   },
-  // Shimmeisho no waza potentiellement classés ici
   'MoroteGari': {
-    image: 'https://www.judopourtous.com/Images/NeMoroteGari.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2022/01/Morote-gari.svg-removebg-preview.png',
     prise: undefined,
     variante: [],
     brasDominant: 'droite',
@@ -510,7 +499,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'avance',
   },
   'KuchikiDaoshi': {
-    image: 'https://www.judopourtous.com/Images/NeKuchikiDaoshi.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2022/01/Kuchiki-Taoshi-removebg-preview.png',
     prise: undefined,
     variante: [],
     brasDominant: 'droite',
@@ -520,7 +509,7 @@ export const teWaza: {[name: string]: TeWaza} = {
     deplacementUke: 'recule',
   },
   'KibisuGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeKibisuGaeshi.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWQezKm0ohMD6DzXZyxn7KMg_dahj5Ouw7w&s',
     prise: undefined,
     variante: [],
     brasDominant: 'droite',
@@ -533,7 +522,7 @@ export const teWaza: {[name: string]: TeWaza} = {
 
 export const koshiWaza: {[name: string]: KoshiWaza} = {
   'OGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeOGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/72/O-goshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -542,7 +531,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'avance',
   },
   'KoshiGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeKoshiGuruma.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Koshi-guruma.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -551,7 +540,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'statique',
   },
   'TsuriGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeTsuriGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e2/Tsuri-goshi.jpg',
     prise: 'classique',
     variante: ['OTsuriGoshi','KoTsuriGoshi'],
     contactHanche: 'frontal',
@@ -560,7 +549,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'avance',
   },
   'SodeTsuriKomiGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeSodeTsuriKomiGoshi.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Sode-tsuri-komi-goshi-removebg-preview.png',
     prise: 'croisee',
     variante: [],
     contactHanche: 'frontal',
@@ -569,7 +558,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'statique',
   },
   'UkiGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeUkiGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Uki-goshi2.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -578,7 +567,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'statique',
   },
   'UtsuriGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeUtsuriGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Utsuri-goshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -587,7 +576,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'lateral',
   },
   'HaraiGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeHaraiGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Harai-goshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -596,7 +585,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'avance',
   },
   'HaneGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeHaneGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Hane-goshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -605,7 +594,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'avance',
   },
   'KubiNage': {
-    image: 'https://www.judopourtous.com/Images/NeKubiNage.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Kubi-Nage.png',
     prise: undefined,
     variante: [],
     contactHanche: 'frontal',
@@ -614,7 +603,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'statique',
   },
   'KoshiUchiMata': {
-    image: 'https://www.judopourtous.com/Images/NeKoshiUchiMata.gif',
+    image: 'https://www.judopourtous.com/Images/TachiUchiMataKoshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -623,7 +612,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'avance',
   },
   'UshiroGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeUshiroGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Ushiro-goshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'lateral',
@@ -631,9 +620,8 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     directionLaterale: undefined,
     deplacementUke: 'recule',
   },
-  // Variantes contextuelles
   'OTsuriGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeOTsuriGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e2/Tsuri-goshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -642,7 +630,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'avance',
   },
   'KoTsuriGoshi': {
-    image: 'https://www.judopourtous.com/Images/NeKoTsuriGoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e2/Tsuri-goshi.jpg',
     prise: 'classique',
     variante: [],
     contactHanche: 'frontal',
@@ -651,7 +639,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
     deplacementUke: 'avance',
   },
   'UchiMataSukashi': {
-    image: 'https://www.judopourtous.com/Images/NeUchiMataSukashi.gif',
+    image: 'https://www.jc-langegardien.fr/wp-content/uploads/2011/06/Uchi-mata-sukashi2.gif',
     prise: undefined,
     variante: [],
     contactHanche: 'frontal',
@@ -663,7 +651,7 @@ export const koshiWaza: {[name: string]: KoshiWaza} = {
 
 export const sutemiWaza: {[name: string]: SutemiWaza} = {
   'TomoeNage': {
-    image: 'https://www.judopourtous.com/Images/NeTomoeNage.gif',
+    image: 'https://judo-lemanique.ch/wp-content/uploads/2021/04/Tomoe-nage-removebg-preview.png',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'arriere',
@@ -672,7 +660,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'recule',
   },
   'UraNage': {
-    image: 'https://www.judopourtous.com/Images/NeUraNage.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Ura-nage_%28cropped%29.jpg',
     prise: 'classique',
     variante: ['IdakiSutemi'],
     directionChuteTori: 'arriere',
@@ -681,7 +669,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'recule',
   },
   'SumiGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeSumiGaeshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Sumi-gaeshi2.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'arriere',
@@ -691,7 +679,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
   },
 
   'YokoGuruma': {
-    image: 'https://www.judopourtous.com/Images/NeYokoGuruma.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Yoko-guruma.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -700,7 +688,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'YokoOtoshi': {
-    image: 'https://www.judopourtous.com/Images/NeYokoOtoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Yoko-otoshi.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -709,7 +697,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'YokoGake': {
-    image: 'https://www.judopourtous.com/Images/NeYokoGake.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Yoko-gake.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -718,7 +706,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'YokoWakare': {
-    image: 'https://www.judopourtous.com/Images/NeYokoWakare.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Yoko-wakare.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -727,7 +715,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'UkiWaza': {
-    image: 'https://www.judopourtous.com/Images/NeUkiWaza.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLItjYI-p15jPc4ckS3b2t-npb8xp0mwjn8g&s',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -736,7 +724,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'TaniOtoshi': {
-    image: 'https://www.judopourtous.com/Images/NeTaniOtoshi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/fe/Tani-otoshi.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -745,7 +733,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'avance',
   },
   'YokoTomoeNage': {
-    image: 'https://www.judopourtous.com/Images/NeYokoTomoeNage.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWU7CdI7nXqV1EeY6CVDUhlkVsDSHTSggvw&s',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -754,7 +742,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'WakiOtoshi': {
-    image: 'https://www.judopourtous.com/Images/NeWakiOtoshi.gif',
+    image: 'https://www.jc-langegardien.fr/wp-content/uploads/2011/06/wakiotoshi.gif',
     prise: 'classique',
     variante: ['SukuriNage'],
     directionChuteTori: 'laterale',
@@ -762,10 +750,8 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     directionLaterale: 'droite',
     deplacementUke: 'lateral',
   },
-
-  // Makikomi Sutemi
   'SotoMakikomi': {
-    image: 'https://www.judopourtous.com/Images/NeSotoMakikomi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Soto-makikomi2.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -774,7 +760,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'UchiMataMakikomi': {
-    image: 'https://www.judopourtous.com/Images/NeUchiMataMakikomi.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxnTgOksbchSJEbLWdqyrFOR1_TfwNmXTiA&s',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -783,7 +769,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'KoUchiMakikomi': {
-    image: 'https://www.judopourtous.com/Images/NeKoUchiMakikomi.gif',
+    image: 'https://www.jc-langegardien.fr/wp-content/uploads/2011/06/KoUchiMakikomi.gif',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -792,7 +778,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'OUchiMakikomi': {
-    image: 'https://www.judopourtous.com/Images/NeOUchiMakikomi.gif',
+    image: 'https://bojovky.info/wp-content/uploads/ouchimakikomi.gif',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -801,7 +787,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'HaraiMakikomi': {
-    image: 'https://www.judopourtous.com/Images/NeHaraiMakikomi.gif',
+    image: 'https://gimnasiosamurai.es/apkjudo/images/librodejudo/YOKOSUTEMIWAZA/MAKIKOMI/HARAIMAKIKOMI.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -810,7 +796,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
   'HaneMakikomi': {
-    image: 'https://www.judopourtous.com/Images/NeHaneMakikomi.gif',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Hane-makikomi.jpg/250px-Hane-makikomi.jpg',
     prise: 'classique',
     variante: [],
     directionChuteTori: 'laterale',
@@ -819,9 +805,8 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'lateral',
   },
 
-  // Anciennes / rares
   'HikkomiGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeHikkomiGaeshi.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAVXllLzfh9ErE0UZtbuMcbrzbBii4WM9eA&s',
     prise: undefined,
     variante: ['ObiToriGaeshi'],
     directionChuteTori: 'arriere',
@@ -830,7 +815,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'recule',
   },
   'TawaraGaeshi': {
-    image: 'https://www.judopourtous.com/Images/NeTawaraGaeshi.gif',
+    image: 'https://www.judo-encyclopedia.com/wp-content/uploads/2022/07/4.-Taware-geashi.jpg',
     prise: undefined,
     variante: [],
     directionChuteTori: 'arriere',
@@ -839,7 +824,7 @@ export const sutemiWaza: {[name: string]: SutemiWaza} = {
     deplacementUke: 'recule',
   },
   'DakiWakare': {
-    image: 'https://www.judopourtous.com/Images/NeDakiWakare.gif',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThCyYAHliFp7P5UfI6i0UUMrEL-CyBb53bKg&s',
     prise: undefined,
     variante: [],
     directionChuteTori: 'arriere',

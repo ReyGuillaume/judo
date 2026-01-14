@@ -10,5 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Judo Techniques Explorer';
+  title = 'Techniques de Judo';
 }
